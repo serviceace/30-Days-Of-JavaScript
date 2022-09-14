@@ -394,3 +394,4 @@ let example019 = 'Tengo 2 pesos, me dieron 4 pesos, me deben 6 pesos.';
 let valores = [];
 valores = example019.split(' ');
 console.log(valores);
+
