@@ -346,4 +346,42 @@ ageOK > 18
             Ejercicio N° 14
 ------------------------------------------*/
 
+/*-----------------------------------------
+            Ejercicio N° 15
+------------------------------------------*/
+
+const now10 = new Date();
+console.log(`${now10.getFullYear()}-${now10.getMonth()+1}-${now10.getDate()}  ${now10.getHours()}:${now10.getMinutes()}`);
+
+console.log(`${now10.getDate()}-${now10.getMonth()+1}-${now10.getFullYear()}  ${now10.getHours()}:${now10.getMinutes()}`);
+
+console.log(`${now10.getDate()}/${now10.getMonth()+1}/${now10.getFullYear()}  ${now10.getHours()}:${now10.getMinutes()}`);
+
+
+/*========================================
+==========================================
+            Ejercicios Nivel 3
+==========================================
+==========================================
+
+1. Create a human readable time format using the Date time object.
+  The hour and the minute should be all the time two digits(7 hours should be 07 and 5 minutes should be 05 )
+    YYY-MM-DD HH:mm eg. 20120-01-02 07:05
+
+*/
+
+/*-----------------------------------------
+            Ejercicio N° 1
+------------------------------------------*/
+
+const now11 = new Date();
+const horas = now11.getHours();
+let segundos = now11.getSeconds();
+
+horas.length == 0
+? console.log("tiene un digito")
+: console.log("tiene dos digitos")
+
+console.log(` ${now11.getFullYear()}-${now11.getMonth()+1}-${now11.getDate()}  ${horas}:${segundos}`)
+
 
