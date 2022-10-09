@@ -14,8 +14,6 @@
 
 4.Even numbers are divisible by 2 and the remainder is zero. How do you check, if a number is even or not using JavaScript?
 
-*/
-
 /*-----------------------------------------
             Ejercicio N° 1           
 ------------------------------------------*/
@@ -169,7 +167,6 @@ if (weekDay == "lunes" || weekDay == "martes" ||weekDay == "miercoles" || weekDa
 
 2. Write a program which tells the number of days in a month, now consider leap year.
 
-*/
 /*-----------------------------------------
             Ejercicio N° 1           
 ------------------------------------------*/
@@ -184,3 +181,9 @@ if (month == "enero" || month == "marzo" || month == "mayo" || month == "julio" 
 } else {
     console.log(`${month} tiene 28 días`)
 }
+
+/*-----------------------------------------
+            Ejercicio N° 2           ********************************************
+------------------------------------------*/
+
+// No ze :B

@@ -200,7 +200,6 @@ console.log(now07.getTime());
 ==========================================
 ==========================================
 
-
 1. Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h)
 2. Write a script that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c)
 3. Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
@@ -217,14 +216,12 @@ console.log(now07.getTime());
 14. Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
 15. Create a human readable time format using the Date time object
 
-
 /*-----------------------------------------
             Ejercicio N° 1        
 ------------------------------------------*/
 
 let triangleBase = prompt('Ingrese la base de su triangulo', 'Base del Triangulo') ;
 let triangleHeight = prompt('Ingrese la altura de su triangulo', 'Altura del triangulo') ;
-
 
 console.log('El area de su triangulo es '+(0.5 * triangleBase * triangleHeight));
 
@@ -265,15 +262,15 @@ alert('El area de su circulo es: ' + circleArea);
 alert('La Circumferencia de si circulo es: ' + circleCircumference);
 
 /*-----------------------------------------
-            Ejercicio N° 5        
+            Ejercicio N° 5        **************************************************************
 ------------------------------------------*/
 
 /*-----------------------------------------
-            Ejercicio N° 6     
+            Ejercicio N° 6        **************************************************************
 ------------------------------------------*/
 
 /*-----------------------------------------
-            Ejercicio N° 7       
+            Ejercicio N° 7       ***************************************************************
 ------------------------------------------*/
 
 /*-----------------------------------------
@@ -343,7 +340,7 @@ ageOK > 18
 : alert(`Tienes ${ageOK} años. Tendrás permiso para conducir dentro de ${ageNot} años.`)
 
 /*-----------------------------------------
-            Ejercicio N° 14
+            Ejercicio N° 14           ***********************************************************
 ------------------------------------------*/
 
 /*-----------------------------------------

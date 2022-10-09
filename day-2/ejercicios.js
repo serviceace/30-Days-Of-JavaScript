@@ -178,7 +178,11 @@ console.log(sentence.endsWith('t'));
             Ejercicio N° 23     **********************************************  
 ------------------------------------------*/
 
-console.log(sentence.match('a'));
+let sentence02 = '30 Days of JavaScript';
+let patron = /a/gi
+console.log(sentence02.match(patron));
+
+// Funciona, pero no entiendo la expresion regular de "patron"
 
 /*-----------------------------------------
             Ejercicio N° 24          
@@ -272,12 +276,10 @@ let example009 = "I hope this course is not full of jargon";
 console.log(example009.includes('jargon'));
 
 /*-----------------------------------------
-            Ejercicio N° 7         ************************************************
+            Ejercicio N° 7         
 ------------------------------------------*/
 
-let example010 = 50;
-example010 = Math.random() * 100;
-console.log(Math.floor(example010));
+console.log(Math.round(Math.random() * 100))
 
 /*-----------------------------------------
             Ejercicio N° 8          
@@ -315,27 +317,22 @@ let coso = Math.random() * index;
 console.log("1 1 1 1 1\n2 1 2 4 8 \n3 1 3 9 27  \n4 1 4 16 64 \n5 1 5 25 125")
 
 /*-----------------------------------------
-            Ejercicio N° 12          **********************************************************
+            Ejercicio N° 12          
 ------------------------------------------*/
 
 let example014 = 'You cannot end a sentence with because because because is a conjunction';
-
-
-
 let index01 = example014.indexOf('because');
-let index02 = example014.lastIndexOf('is') -1;
+let index02 = example014.lastIndexOf('because') + because.length;
+let because = 'because';
+let becauseLength = because.length;
 
 console.log(example014.substring(index01, index02)); 
-
-
 
 /*========================================
 ==========================================
             Ejercicios Nivel 3
 ==========================================
-=========================================*/ 
-
-/*
+========================================== 
 
 1.'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence.
 
@@ -344,7 +341,6 @@ console.log(example014.substring(index01, index02));
 3. Clean the following text and find the most frequent word (hint, use replace and regular expressions).
 
 4. Calculate the total annual income of the person by extracting the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
-*/
 
 /*-----------------------------------------
             Ejercicio N° 1          
@@ -352,6 +348,7 @@ console.log(example014.substring(index01, index02));
 
 let example015 = 'Love is the best thing in this world. Some found their love and some are still looking for their love.';
 let loveWords = [];
+
 loveWords = example015.match(/love/gi);
 
 console.log(loveWords.length)
@@ -367,7 +364,7 @@ becauseWords = example016.match(/because/gi);
 console.log(becauseWords.length)
 
 /*-----------------------------------------
-            Ejercicio N° 3          
+            Ejercicio N° 3          ***************************************
 ------------------------------------------*/
 
 let example017 = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
@@ -379,19 +376,21 @@ example017 = example017.replace(/&/g, '');
 example017 = example017.replace(/#/g, '');
 example017 = example017.replace(/;/g, '');
 
+// Funciona, pero no puedo quitar el signo $ de la oración
 
 /*-----------------------------------------
             Ejercicio N° 4          
 ------------------------------------------*/
 
-/* let example018 = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.';
-
-let annualIncome = 0;
- */
-
-let example019 = 'Tengo 2 pesos, me dieron 4 pesos, me deben 6 pesos.';
-
+let example019 = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.';
 let valores = [];
-valores = example019.split(' ');
-console.log(valores);
 
+valores = example019.split(' ');
+let monto01 = parseInt(valores[2]);
+let monto02 = parseInt(valores[8]);
+let monto03 = parseInt(valores[12]);
+
+console.log(valores)
+console.log(monto01, monto02, monto03);
+
+console.log(`El ingreso anual de la persona es de ${monto01 + monto02 + monto03}`)

@@ -169,8 +169,6 @@ if (itCompanies08.includes(userCompany.toLowerCase())) {
     console.log('No se encontró esa compañia')
 }
 
-// Averiguar como poner el array en minúsculas no-manualmente
-
 /*-----------------------------------------
             Ejercicio N° 14          
 ------------------------------------------*/
@@ -288,6 +286,8 @@ console.log(itCompanies17)
             Ejercicio N° 1          
 ------------------------------------------*/
 
+// No hace falta...
+
 /*-----------------------------------------
             Ejercicio N° 2          
 ------------------------------------------*/
@@ -310,11 +310,11 @@ console.log(textArray.length);
             Ejercicio N° 3          *************************************************************
 ------------------------------------------*/
 
-const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey', 'Sugar'];
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey'];
 const honeyAlergic = true;
-let honeyStart = shoppingCart.indexOf('Honey');
+let honeyStart = 0;
+honeyStart = shoppingCart.indexOf('Honey');
 let honeyEnd = shoppingCart.indexOf('Honey') + 1;
-
 
 
 if (shoppingCart.includes('Meat')) {
@@ -323,7 +323,6 @@ if (shoppingCart.includes('Meat')) {
     shoppingCart.unshift('Meat');
 }
 
-
 if (shoppingCart.includes('Sugar')) {
     console.log('Si, tiene Sugar')
 } else { 
@@ -331,7 +330,7 @@ if (shoppingCart.includes('Sugar')) {
 }
 
 if (honeyAlergic == true) {
-    shoppingCart.splice( honeyStart, honeyEnd )
+   shoppingCart.splice( honeyStart, honeyEnd )
 } else {
     console.log('Se queda la miel')
 }
@@ -340,7 +339,7 @@ shoppingCart[3] = 'Green Tea'
 
 console.log(shoppingCart)
 
-// No puedo extraer  "honey" del array. Corregir luego
+// No puedo extraer unicamente "honey" del array. Corregir luego
 
 /*-----------------------------------------
             Ejercicio N° 4          
@@ -425,12 +424,14 @@ const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 ------------------------------------------*/
 
 const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
-
 ages.sort()
 
-console.log(`The Min. age is: ${ages[0]} and the Max. age is: ${ages[ages.length - 1]}`);
 
-console.log(`The range of the ages is ${ (ages[ages.length - 1]) - (ages[0]) } `)
+
+console.log(`The Min. age is: ${ages[0]} and the Max. age is: ${ages[ages.length - 1]}`);
+console.log(`The median ages is: ${ages[ages.length / 2]}`)
+// Find the average age (all items divided by number of items) Sin usar for loop
+console.log(`The range of the ages is: ${ (ages[ages.length - 1]) - (ages[0]) } `)
 
 // Completar los puntos que faltan
 
@@ -634,13 +635,11 @@ const countries03 = [
     'Zimbabwe'
   ]
   
-  
-  console.log(`Los primeros 10 paises en el array son ${countries03.slice(0, 10)}`) ;
+    console.log(`Los primeros 10 paises en el array son ${countries03.slice(0, 10)}`) ;
 
 /*-----------------------------------------
             Ejercicio N° 3          
 ------------------------------------------*/
-
 
   console.log(`El país del medio del array es: ${countries03[Math.floor(countries03.length / 2)]}`) 
 
